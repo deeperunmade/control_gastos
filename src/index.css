@@ -145,8 +145,6 @@ header h1 {
     border-left: 5px solid #b91c1c;
     color: #b91c1c;
 }
-.alerta.success {
-}
 
 .contenedor {
     width: 90%;
@@ -404,3 +402,55 @@ body .modal {
     font-size: 2.4rem;
     text-align: right;
 }
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .formulario input[type="text"].nuevo-presupuesto, 
+    .formulario input[type="number"].nuevo-presupuesto {
+        font-size: 2rem;
+        text-align: center;
+    }
+    .modal .formulario {
+        max-width: 35rem;
+        width: 40rem;
+        transition-property: all;
+        transition-duration: 300ms;
+        transition-timing-function: ease-in;
+        opacity: 0;
+    }
+    .formulario {
+        width: 95%;
+        margin: 0 auto;
+        padding: 2.5rem 0;
+    }
+    .formulario legend {
+        font-size: 3.6rem;
+        text-align: center;
+        display: block;
+        text-transform: uppercase;
+        color: var(--blanco);
+        margin-top: 1.5rem;
+        margin-bottom: 2rem;
+        padding-bottom: 1rem;
+        border-bottom: 2px solid var(--azul);
+    }
+    .filtros .campo {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+    .filtros label {
+        font-size: 2rem;
+        font-weight: 900;
+        color: var(--gris-oscuro);
+    }
+    .filtros select {
+        font-size: 1.5rem;
+        flex: 1;
+        padding: 1rem;
+        border: none;
+        border-radius: 1rem;
+        text-align: center;
+        background-color: var(--gris-claro);
+    }
+    
+  }
